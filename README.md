@@ -19,7 +19,9 @@ Once the repository has been created, follow the instructions here about [publis
 
 ## Customization
 
-The HTML file is at the `/docs/index.html` and has TODO comments showing what to replace:
+## `index.html` 
+
+The HTML file is the main file and is at [`/docs/index.html`](./docs/index.html) and has TODO comments showing what to replace:
 
 - Paper title, authors, institution, conference
 - Links (arXiv, GitHub, etc.)
@@ -28,14 +30,20 @@ The HTML file is at the `/docs/index.html` and has TODO comments showing what to
 - Related works in the dropdown
 - Meta tags for SEO and social sharing
 
-### Meta Tags
-
 The template includes meta tags for better search engine visibility and social media sharing. These appear in the `<head>` section and help with:
 - Google Scholar indexing
 - Social media previews (Twitter, Facebook, LinkedIn)
 - Search engine optimization
 
 Create a 1200x630px social preview image at `static/images/social_preview.png`.
+
+## ReadME.md
+
+Replace this file with information about the paper as well as any setup and run instructions.
+
+## Additional Content
+
+You can also add additional content such as images, logs and results as seperate files or folders. But do not rename the `docs` folder
 
 ## Tips
 
