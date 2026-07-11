@@ -14,7 +14,7 @@ Once the repository has been created, follow the instructions here about [publis
 
 - Go to repo's `Settings` -> `Pages` (under `Code and automation` section)
 - Under `source` select `deploy from branch`
-- Under `branch` select `master` and then `/docs` option and press `save`
+- Under `branch` select `main` and then `/docs` option and press `save`
 - In a few minutes, you will get a new info box with "Your site is now live at..." with the link to the site.
 
 ## Customization
