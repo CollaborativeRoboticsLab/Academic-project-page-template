@@ -348,7 +348,64 @@ body {
   padding: 3rem 1.5rem;
 }
 
+.footer-layout {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.footer-logo-panel,
+.footer-panel {
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.footer-logo-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.footer-logo-panel a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+.footer-info-panels {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.footer-panel {
+  padding: 1.5rem;
+}
+
+.footer-panel-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
 .footer .content {
+  margin-bottom: 0;
   color: var(--text-secondary);
   line-height: 1.7;
 }
@@ -362,6 +419,20 @@ body {
 .footer a:hover {
   color: var(--primary-hover);
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-info-panels {
+    grid-template-rows: auto;
+  }
+
+  .footer-logo {
+    max-width: 140px;
+  }
 }
 
 /* BibTeX Styling */
